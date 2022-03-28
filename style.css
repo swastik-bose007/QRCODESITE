@@ -1,0 +1,201 @@
+.logosiz img {
+    height: 60px;
+}
+
+.size {
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.header{
+    margin-left: 18vw;
+}
+@media (max-width: 576px) {
+    .header{
+    margin-left:unset;
+    }
+}
+
+.banner{
+    margin-top: 20vh;
+}
+.imagecl{
+    background-image: url('bgggggggbw.png');
+    background-repeat: no-repeat;
+    /* margin-top: 5rem; */
+    height: 30rem;
+}
+.imagecl::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 7.4vw;
+    margin-top: 8.9rem;
+    width: 80%;
+    height: 100%;
+    background-image: url('bggggggg.png');
+    background-repeat: no-repeat;
+    height: 30rem;
+    overflow: hidden;
+    animation: animate 4s ease-in-out infinite;
+}
+@keyframes animate {
+    0%,100%{
+        height: 0%;
+    }
+    50%{
+        height: 80%;
+    }
+}
+.imagecl::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 30vh;
+    margin-left: 14.2vw;
+    width: 19%;
+    height: 8px;
+    background: rgb(208, 20, 255);
+    border-radius: 8px;
+    filter: drop-shadow(0 0 20px rgb(208, 20, 255)) drop-shadow(0 0 60px rgb(208, 20, 255));
+    animation: animate_line 4s ease-in-out infinite;
+}
+@keyframes animate_line {
+    0%,100%{
+        top: 0%;
+    }
+    50%{
+        top: 45%;
+    }
+}
+@media (max-width: 576px) {
+    .imagecl{
+        margin-top: -6.8rem;
+    }
+    .imagecl::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-left: 2.4vw;
+        margin-top: 2rem;
+       
+    }
+    .imagecl::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 18vh;
+        margin-left: 20vw;
+        width: 65%;
+        height: 8px;
+        background: rgb(208, 20, 255);
+        border-radius: 8px;
+        filter: drop-shadow(0 0 20px rgb(208, 20, 255)) drop-shadow(0 0 60px rgb(208, 20, 255));
+        animation: animate_line 4s ease-in-out infinite;
+    }
+}
+.textpart h2{
+    font-weight: 500;
+    margin-top: 30vh;
+    font-size: 2.5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(208, 20, 255);
+}
+.textpart p{
+    margin-top: 5vh;
+    color: #fff;
+}
+@media (max-width: 576px) {
+    .textpart h2{
+        text-align: center;
+        margin-top: unset;
+    }
+    .textpart .exp{
+        margin-left: 12rem;
+    }
+}
+.xcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 400;
+}
+.xbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 15vh;
+}
+.stract p{
+    font-weight: 500;
+    border-bottom: 3px solid rgb(255, 166, 0);
+}
+@media (max-width: 576px) {
+    .xbox{
+        padding-bottom: 5vh;
+    }
+    .bgpik img{
+        height: 30vh;
+    }
+}
+.cardbox{
+    position: relative;
+    width: 400px;
+    height: 280px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.603);
+    transition: 0.3s;
+    padding: 30px 50px;
+    background: rgb(255, 166, 0);
+    cursor: pointer;
+}
+.cardbox:hover{
+    height: 400px;
+}
+.imgbox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-60px);
+    z-index: 100;
+}
+.imgbox  img{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.603);
+
+}
+.contentbox{
+    padding: -20px 20px;
+    text-align: center;
+    transform: translateY(-200px);
+    opacity: 0;
+    transition: 0.3s;
+}
+.iconx img{
+    height: 60px;
+    width: 60px;
+    background: #fff;
+    border-radius: 50%;
+    margin-top: -80px;
+    margin-left: 40%;
+    padding: 5px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.603);
+    opacity: 1;
+    transition: 0.3s;
+}
+.cardbox:hover > .contentbox{
+    opacity: 1;
+    transform: translateY(-200px);
+}
+.cardbox:hover > .iconx img{
+    opacity: 0;
+}
+.contentbox h2{
+    color: #fff;
+}
